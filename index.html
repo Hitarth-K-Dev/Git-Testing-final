@@ -13,10 +13,24 @@
   <p class="paragraph2">
     HOVER OVER ME!
   </p>
+
+  <button class="firstbutton">
+    CLICK ME!!
+  </button>
 </body>
 </html>
 
 <style>
+  .firstbutton:active {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline;
+  }
+  
   .paragraph {
     font-weight: bold;
     font-size: 40px;
@@ -28,14 +42,20 @@
     height: 80px;
   }
 
-  .paragraph2:hover {
+  .paragraph2 {
     font-weight: bold;
     font-size: 40px;
-    display: flex;
     align-items: center;
     text-align: center;
-    background-color: rgb(181, 181, 181);
     justify-content: center;
     height: 80px;
+    display: inline;
+    background-color: black;
+    color: white;
+  }
+
+  .paragraph2:hover {
+    color: lightgrey;
+    cursor: pointer;
   }
 </style>
